@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display e Visibility</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Display e Visibility</h1>
+  </header>
+
+  <main>
+    <h2>Exemplos de display</h2>
+    <br>
+
+    <p>Display Block</p>
+    <div class="demo-box">
+      <div class="quadro" id="um" style="display: block;">A</div>
+      <div class="quadro" id="dois" style="display: block;">B</div>
+      <div class="quadro" id="tres" style="display: block;">C</div>
+    </div>
+
+    <br>
+    <p>Display Inline</p> <!--elementos ao laod um do outro, tamanho exato do conteudo interno, n aceita width nem height, ignora as margins--> 
+    <div class="demo-box">
+      <div class="quadro" id="um" style="display: inline; width: 100px;">A</div>
+      <div class="quadro" id="dois" style="display: inline;">B</div>
+      <div class="quadro" id="tres" style="display: inline;">C</div>
+    </div>
+
+    <br>
+    <p>Display Inline-Block</p> <!--elementos ao laod um do outro, tamanho exato do conteudo interno, esse aceita width nem height-->
+    <div class="demo-box">
+      <div class="quadro" id="um" style="display: inline-block; width: 100px;">A</div>
+      <div class="quadro" id="dois" style="display: inline-block;">B</div>
+      <div class="quadro" id="tres" style="display: inline-block;">C</div>
+    </div>
+
+    <br>
+    <p>Display None</p> <!-- como se n existisse no html -->
+    <div class="demo-box">
+      <div class="quadro" id="um" style="display: none;">A</div>
+      <div class="quadro" id="dois" style="display: none;">B</div>
+      <div class="quadro" id="tres" style="display: none;">C</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <h2>Exemplos de visibilidade</h2>
+    <br>
+
+    <p>Visibility Hidden</p>
+    <div class="demo-box">
+      <div class="quadro" id="um" style="visibility: hidden;">A</div>
+      <div class="quadro" id="dois" style="visibility: hidden;">B</div>
+      <div class="quadro" id="tres" style="visibility: hidden;">C</div>
+    </div>
+
+    <br>
+     <p>Visibility Visible</p>
+    <div class="demo-box">
+      <div class="quadro" id="um" style="visibility: visible;">A</div>
+      <div class="quadro" id="dois" style="visibility: visible;">B</div>
+      <div class="quadro" id="tres" style="visibility: visible;">C</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Exemplo tema 1 :)</p>
+  </footer>
+
+</body>
+</html>

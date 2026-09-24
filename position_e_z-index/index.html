@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position e Z-Index</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Position e Z-Index</h1>
+  </header>
+
+  <main>
+    <h2>Exemplos de position</h2>
+    <br>
+
+    <p>Position Static</p> <!--age do jeito normal, n funciona com top, left, z-index--> 
+    <div class="demo-box">
+      <div class="quadro" id="um" style="position: static;">A</div>
+      <div class="quadro" id="dois" style="position: static;">B</div>
+      <div class="quadro" id="tres" style="position: static;">C</div>
+    </div>
+
+    <br>
+    <p>Position Relative</p> <!--posicionado em relação a posicao inicial, o local onde tava continua "reservado", n mexe no tamanho dos outros elementos proximos--> 
+    
+    <div class="demo-box">
+      <div class="quadro" id="um" style="position: relative; left: 50px;">A</div>
+      <div class="quadro" id="dois" style="position: relative;">B</div>
+      <div class="quadro" id="tres" style="position: relative; right: 50px;">C</div>
+    </div>
+
+    <br>
+    <p>Position Absolute </p> <!--é removido total do fluxo normal, agr ele ocupa espaço em relação a classe pai, pros outros elementos filhos ele é invisível--> 
+    <div class="demo-box">
+      <div class="quadro" id="um" style="position: absolute;">A</div>
+      <div class="quadro" id="dois" style="">B</div>
+      <div class="quadro" id="tres" style="">C</div>
+    </div>
+
+    <br>
+    <p>Position Fixed</p>
+    <div class="demo-box">
+      <div class="quadro" id="um" style="position: fixed; top: 10px; left: 10px;">Aa</div>
+      <div class="quadro" id="dois" style="">B</div>
+      <div class="quadro" id="tres" style="">C</div>
+    </div>
+
+    <br>
+    <p>Position Sticky</p> <!--mistura relative e fixed, é relative até que a rolagem da pagina chegue em determinada posiçção, aí fica fixed e cola ali-->
+    <div class="demo-box" style="height: 250px; overflow-y: auto;">
+      <div class="quadro" id="um" style="position: sticky; top: 0;">A</div>
+      <div class="quadro" id="dois" style="position: sticky;">B</div>
+      <div class="quadro" id="tres" style="position: sticky; top: 15px;">C</div>
+      <div class="quadro" id="quatro" style="position: sticky;">D</div>
+        <div class="quadro" id="cinco" style="position: sticky; ">E</div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <h2>Exemplos de Z-Index</h2>
+    <br>
+
+    <p>Z-Index com position relative</p>
+    <div class="demo-box">
+      <div class="quadro" id="um" style="position: relative; top: 25px; left: 0; z-index: 0;">A</div>
+      <div class="quadro" id="dois" style="position: relative; top: 25px; left: 20px; z-index: 1;">B</div>
+      <div class="quadro" id="tres" style="position: relative; top: -100px; left: 10px; z-index: 0;">C</div>
+    </div>
+
+    <br>
+     <p>Position Sticky e Z-Index</p>
+    <div class="demo-box" style="height: 250px; overflow-y: auto;">
+        <div class="quadro" id="um" style="position: sticky; top: 0px; z-index: 1;">A</div>
+        <div class="quadro" id="dois" style="position: sticky; top: 10px; left: 20px; z-index: 0;">B</div>
+        <div class="quadro" id="tres" style="position: sticky; top: 20px; left: 10px; z-index: 2;">C</div>
+        <div class="quadro" id="quatro" style="position: sticky; top: 30px;z-index: 1;">D</div>
+        <div class="quadro" id="cinco" style="position: sticky; top: 40px;z-index: 3;">E</div>
+
+        <!-- Espaço extra para permitir a rolagem -->
+        <div style="height: 400px;"></div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>Exemplo tema 2</p>
+  </footer>
+
+</body>
+</html>

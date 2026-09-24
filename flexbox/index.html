@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Flexbox</h1>
+  </header>
+
+  <main>
+    <h2>Flex direction</h2>
+    <br>
+
+    <p>Flex direction Row</p>
+    <div class="demo-box" style="display: flex; flex-direction: row;"> <!--em linha da esq p dir-->
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Flex direction Row Reverse</p>
+    <div class="demo-box" style="display: flex; flex-direction: row-reverse;"> <!--em linha da dir p esq-->
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Flex direction Column</p>
+    <div class="demo-box" style="display: flex; flex-direction: column;"> <!--em coluna de cima p baixo-->
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Flex direction Column Reverse</p>
+    <div class="demo-box" style="display: flex; flex-direction: column-reverse;"> <!--em coluna de baixo p cima-->
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <h2>Justify Content</h2>
+    <br>
+    <p>Justify Content Flex Start</p>
+    <div class="demo-box" style="display: flex; flex-direction: row;"> <!--em linha da esq p dir-->
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Justify Content Center</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; justify-content: center;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Justify Content Flex End</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; justify-content: flex-end;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Justify Content Space Between</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; justify-content: space-between;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Justify Content Space Around</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; justify-content: space-around;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Justify Content Space Evenly</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    
+
+    <br>
+    <h2>Align Items</h2>
+
+    <br>
+    <p>Align Items Stretch</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: stretch; height: 200px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Align Items Center</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: center; height: 200px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Align Items Flex Start</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: flex-start; height: 200px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+    <br>
+    <p>Align Items Flex End</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: flex-end; height: 200px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+
+    <br>
+    <h2>Flex Wrap</h2>
+
+     <br>
+    <p>No Wrap </p>
+    <div class="demo-box" style="display: flex; flex-direction: row; flex-wrap: nowrap; ">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+      <div class="quadro" id="um">D</div>
+      <div class="quadro" id="dois">E</div>
+      <div class="quadro" id="tres">F</div>
+      <div class="quadro" id="um">G</div>
+      <div class="quadro" id="dois">H</div>
+      <div class="quadro" id="tres">I</div>
+      <div class="quadro" id="um">J</div>
+      <div class="quadro" id="dois">K</div>
+      <div class="quadro" id="tres">L</div>
+      <div class="quadro" id="um">M</div>
+      <div class="quadro" id="dois">N</div>
+      <div class="quadro" id="tres">O</div>
+      <div class="quadro" id="um">P</div>
+    </div>
+    </div>
+
+    <br>
+    <p>Flex Wrap</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; flex-wrap: wrap; ">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+      <div class="quadro" id="um">D</div>
+      <div class="quadro" id="dois">E</div>
+      <div class="quadro" id="tres">F</div>
+      <div class="quadro" id="um">G</div>
+      <div class="quadro" id="dois">H</div>
+      <div class="quadro" id="tres">I</div>
+      <div class="quadro" id="um">J</div>
+      <div class="quadro" id="dois">K</div>
+      <div class="quadro" id="tres">L</div>
+      <div class="quadro" id="um">M</div>
+      <div class="quadro" id="dois">N</div>
+      <div class="quadro" id="tres">O</div>
+      <div class="quadro" id="um">P</div>
+    </div>
+
+    <br>
+    <p>Flex Wrap Reverse</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; flex-wrap: wrap-reverse; ">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+      <div class="quadro" id="um">D</div>
+      <div class="quadro" id="dois">E</div>
+      <div class="quadro" id="tres">F</div>
+      <div class="quadro" id="um">G</div>
+      <div class="quadro" id="dois">H</div>
+      <div class="quadro" id="tres">I</div>
+      <div class="quadro" id="um">J</div>
+      <div class="quadro" id="dois">K</div>
+      <div class="quadro" id="tres">L</div>
+      <div class="quadro" id="um">M</div>
+      <div class="quadro" id="dois">N</div>
+      <div class="quadro" id="tres">O</div>
+      <div class="quadro" id="um">P</div>
+    </div>
+
+
+
+
+    <br>
+    <h2>Gap</h2>
+
+    <br>
+    <p>Gap 10px</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+
+
+    <br>
+    <p>Gap 60px</p>
+    <div class="demo-box" style="display: flex; flex-direction: row; align-items: center; gap: 60px;">
+      <div class="quadro" id="um">A</div>
+      <div class="quadro" id="dois">B</div>
+      <div class="quadro" id="tres">C</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Exemplo tema 4 :) - Equipe composta por Fernanda A., M. Heloisa, Ruan e Ray.</p>
+  </footer>
+
+</body>
+</html>
